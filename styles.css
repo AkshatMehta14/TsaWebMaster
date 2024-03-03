@@ -1,49 +1,73 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: black; /* Set body background to black */
+    color: white; /* Set text color to white */
 }
 
 .header {
-  position: relative;
-  padding: 100px 0;
-  background: rgb(0, 0, 0);
-  color: white;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    position: relative;
+    padding: 100px 0;
+    background: black; /* Change background color */
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .header h1 {
-  font-size: 5rem;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-  color: white;
-  text-shadow: 0 0 0.2em rgb(71, 255, 95), 0 0 0.3em rgb(71, 255, 123);
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: white;
+    text-shadow: 0 0 .2em rgb(71, 255, 95), 0 0 .3em rgb(71, 255, 123);
 }
 
 .bg-green {
-  background-color: #ffffff !important;
+    background-color: #ffffff!important;
 }
 
 .navbar {
-  background-color: rgba(128, 128, 128, 0.5); /* Translucent gray */
-  margin-bottom: 0;
+    background-color: rgba(128, 128, 128, 0.5); /* Translucent gray */
+    margin-bottom: 0;
 }
 
 .mission-statement {
-  background-color: #070707; /* Grayish background */
-  padding: 50px 20px;
-  text-align: center;
+    background-color: #333; /* Dark gray background */
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.mission-statement h2,
-.mission-statement p,
+.mission-statement h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.mission-statement p, .mission-statement ul {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
 .mission-statement li {
-  color: white; /* White text */
+    margin-bottom: 10px;
+}
+
+/* Optional: Add animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.mission-statement * {
+    animation: fadeIn 1s ease-in-out;
 }
