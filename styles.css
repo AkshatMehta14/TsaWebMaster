@@ -1,32 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    background-color: black; /* Set body background to black */
-    color: white; /* Set text color to white */
+    background-color: black;
+    color: white;
 }
 
 .header {
     position: relative;
     padding: 100px 0;
-    background: black; /* Change background color */
+    background: black; /* Adjust if you have a specific background color or image */
     color: white;
-    height: 100vh;
+    height: 100vh; /* This will make the header take up the full height of the viewport */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* This centers the content vertically */
+    justify-content: center; /* This centers the content horizontally */
     flex-direction: column;
+    text-align: center; /* This ensures text is centered within the section */
 }
 
+.searcg {
+   
+    color: white;
+    text-shadow: 0 0 .2em rgb(71, 255, 95), 0 0 .3em rgb(71, 255, 123);
+    
+}
+
+/* Rest of your CSS rules */
+
+
 .header h1 {
-    font-size: 5rem;
+    font-size: 4rem; /* Adjusted for better scaling on mobile */
     font-weight: 700;
     margin-bottom: 0.5em;
     color: white;
     text-shadow: 0 0 .2em rgb(71, 255, 95), 0 0 .3em rgb(71, 255, 123);
+    text-align: center; /* Centered text for all screen sizes */
 }
 
 .bg-green {
@@ -34,32 +47,45 @@ body {
 }
 
 .navbar {
-    background-color: rgba(128, 128, 128, 0.5); /* Translucent gray */
+    background-color: rgba(128, 128, 128, 0.5);
     margin-bottom: 0;
 }
 
 .mission-statement {
-    background-color: #333; /* Dark gray background */
-    padding: 40px;
-    margin: 20px 0;
+    background: rgb(3, 2, 2);
+    padding: 3rem; /* Added padding for spacing */
+    margin: 20px auto; /* Centered on the page with auto margins */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left for larger screens */
 }
 
 .mission-statement h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 3rem; /* Responsive font size */
+    color: white;
+    text-shadow: 0 0 .2em rgb(71, 255, 95), 0 0 .3em rgb(71, 255, 123);
+    margin-bottom: 1.5rem; /* Increased margin for better spacing */
 }
 
 .mission-statement p, .mission-statement ul {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.6;
+    font-size: 1.25rem; /* Responsive font size */
+    color: #ffffff;
+    line-height: 1.75; /* Increased line height for better readability */
+    margin-bottom: 1rem; /* Added bottom margin for spacing */
 }
 
 .mission-statement li {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem; /* Increased bottom margin for list items */
+}
+
+/* Responsive text alignment for smaller screens */
+@media (max-width: 768px) {
+    .mission-statement h2,
+    .mission-statement p,
+    .mission-statement ul,
+    .mission-statement li {
+        text-align: center;
+    }
 }
 
 /* Optional: Add animation */
