@@ -1,99 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    background-color: black;
-    color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
 }
 
 .header {
-    position: relative;
-    padding: 100px 0;
-    background: black; /* Adjust if you have a specific background color or image */
-    color: white;
-    height: 100vh; /* This will make the header take up the full height of the viewport */
-    display: flex;
-    align-items: center; /* This centers the content vertically */
-    justify-content: center; /* This centers the content horizontally */
-    flex-direction: column;
-    text-align: center; /* This ensures text is centered within the section */
+  position: relative;
+  padding: 100px 0;
+  background: black; /* Adjust if you have a specific background color or image */
+  color: white;
+  height: 100vh; /* This will make the header take up the full height of the viewport */
+  display: flex;
+  align-items: center; /* This centers the content vertically */
+  justify-content: center; /* This centers the content horizontally */
+  flex-direction: column;
+  text-align: center; /* This ensures text is centered within the section */
 }
 
 .searcg {
-   
-    color: white;
-    text-shadow: 0 0 .2em rgb(71, 255, 95), 0 0 .3em rgb(71, 255, 123);
-    
+  color: white;
+  text-shadow: 0 0 0.2em rgb(71, 255, 95), 0 0 0.3em rgb(71, 255, 123);
 }
 
 /* Rest of your CSS rules */
 
-
 .header h1 {
-    font-size: 4rem; /* Adjusted for better scaling on mobile */
-    font-weight: 700;
-    margin-bottom: 0.5em;
-    color: white;
-    text-shadow: 0 0 .2em rgb(71, 255, 95), 0 0 .3em rgb(71, 255, 123);
-    text-align: center; /* Centered text for all screen sizes */
+  font-size: 4rem; /* Adjusted for better scaling on mobile */
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: white;
+  text-shadow: 0 0 0.2em rgb(71, 255, 95), 0 0 0.3em rgb(71, 255, 123);
+  text-align: center; /* Centered text for all screen sizes */
 }
 
 .bg-green {
-    background-color: #ffffff!important;
+  background-color: #ffffff !important;
 }
 
 .navbar {
-    background-color: rgba(128, 128, 128, 0.5);
-    margin-bottom: 0;
+  background-color: rgba(128, 128, 128, 0.5);
+  margin-bottom: 0;
 }
 
 .mission-statement {
-    background: rgb(3, 2, 2);
-    padding: 3rem; /* Added padding for spacing */
-    margin: 20px auto; /* Centered on the page with auto margins */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Align text to the left for larger screens */
+  background: rgb(3, 2, 2);
+  padding: 3rem; /* Added padding for spacing */
+  margin: 20px auto; /* Centered on the page with auto margins */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left for larger screens */
 }
 
 .mission-statement h2 {
-    font-size: 3rem; /* Responsive font size */
-    color: white;
-    text-shadow: 0 0 .2em rgb(71, 255, 95), 0 0 .3em rgb(71, 255, 123);
-    margin-bottom: 1.5rem; /* Increased margin for better spacing */
+  font-size: 3rem; /* Responsive font size */
+  color: white;
+  text-shadow: 0 0 0.2em rgb(71, 255, 95), 0 0 0.3em rgb(71, 255, 123);
+  margin-bottom: 1.5rem; /* Increased margin for better spacing */
 }
 
-.mission-statement p, .mission-statement ul {
-    font-size: 1.25rem; /* Responsive font size */
-    color: #ffffff;
-    line-height: 1.75; /* Increased line height for better readability */
-    margin-bottom: 1rem; /* Added bottom margin for spacing */
+.mission-statement p,
+.mission-statement ul {
+  font-size: 1.25rem; /* Responsive font size */
+  color: #ffffff;
+  line-height: 1.75; /* Increased line height for better readability */
+  margin-bottom: 1rem; /* Added bottom margin for spacing */
 }
 
 .mission-statement li {
-    margin-bottom: 0.5rem; /* Increased bottom margin for list items */
+  margin-bottom: 0.5rem; /* Increased bottom margin for list items */
 }
 
 /* Responsive text alignment for smaller screens */
 @media (max-width: 768px) {
-    .mission-statement h2,
-    .mission-statement p,
-    .mission-statement ul,
-    .mission-statement li {
-        text-align: center;
-    }
+  .mission-statement h2,
+  .mission-statement p,
+  .mission-statement ul,
+  .mission-statement li {
+    text-align: center;
+  }
 }
 
-/* Optional: Add animation */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .mission-statement * {
-    animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.info-container {
+  max-height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+li.info-block {
+  min-height: 100vh;
+  max-height: 100vh;
+  border-bottom: 1px solid white;
+  padding: 3rem;
+  font-size: 1.4rem;
+  color: rgb(33, 33, 33) !important;
+  text-align: center;
+  scroll-snap-align: start;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
