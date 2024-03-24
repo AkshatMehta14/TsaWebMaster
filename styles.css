@@ -13,14 +13,17 @@ body {
 .header {
   position: relative;
   padding: 100px 0;
-  background: black; /* Adjust if you have a specific background color or image */
   color: white;
-  height: 100vh; /* This will make the header take up the full height of the viewport */
+  height: 100vh;
   display: flex;
-  align-items: center; /* This centers the content vertically */
-  justify-content: center; /* This centers the content horizontally */
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  text-align: center; /* This ensures text is centered within the section */
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('https://englishpluspodcast.com/wp-content/uploads/2024/01/The-Future-of-Renewable-Energy.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .searcg {
