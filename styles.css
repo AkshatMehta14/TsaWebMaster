@@ -20,7 +20,7 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url('https://englishpluspodcast.com/wp-content/uploads/2024/01/The-Future-of-Renewable-Energy.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url('https://englishpluspodcast.com/wp-content/uploads/2024/01/The-Future-of-Renewable-Energy.jpg');
   background-size: cover;
   background-position: center;
   animation: fadeIn 1s ease-in-out;
@@ -32,16 +32,6 @@ body {
   text-shadow: 0 0 0.2em rgb(71, 255, 95), 0 0 0.3em rgb(71, 255, 123);
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background-color: rgba(192, 192, 192, 0.5);
-  border-radius: 10px;
-}
-
 .header h1 {
   font-size: 4rem; /* Adjusted for better scaling on mobile */
   font-weight: 700;
@@ -51,13 +41,13 @@ body {
   text-align: center; /* Centered text for all screen sizes */
 }
 
-.bg-green {
-  background-color: #ffffff !important;
+.navbar {
+  background-color: rgba(37, 36, 34, 0.1);
+  margin-bottom: 0;
 }
 
-.navbar {
-  background-color: rgba(128, 128, 128, 0.5);
-  margin-bottom: 0;
+.navbar a{
+  color: #eacdc2 !important;
 }
 
 .mission-statement {
@@ -80,7 +70,7 @@ body {
 .mission-statement p,
 .mission-statement ul {
   font-size: 1.25rem; /* Responsive font size */
-  color: #ffffff;
+  color: #eacdc2;
   line-height: 1.75; /* Increased line height for better readability */
   margin-bottom: 1rem; /* Added bottom margin for spacing */
 }
@@ -117,10 +107,20 @@ body {
   display: flex;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(192, 192, 192, 0.5);
+  border-radius: 10px;
+}
+
 .info-container {
   max-height: 100vh;
   width: 100vw;
-  overflow-y: scroll;
+  overflow-y: auto;
   scroll-snap-type: y mandatory;
 }
 
