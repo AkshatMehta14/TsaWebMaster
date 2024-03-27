@@ -33,12 +33,12 @@ body {
 }
 
 .header h1 {
-  font-size: 4rem; /* Adjusted for better scaling on mobile */
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 0.5em;
   color: white;
   text-shadow: 0 0 0.2em rgb(71, 255, 95), 0 0 0.3em rgb(71, 255, 123);
-  text-align: center; /* Centered text for all screen sizes */
+  text-align: center;
 }
 
 .navbar {
@@ -52,34 +52,33 @@ body {
 
 .mission-statement {
   background: rgb(3, 2, 2);
-  padding: 3rem; /* Added padding for spacing */
-  margin: 20px auto; /* Centered on the page with auto margins */
+  padding: 3rem;
+  margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left; /* Align text to the left for larger screens */
+  text-align: left;
 }
 
 .mission-statement h2 {
-  font-size: 3rem; /* Responsive font size */
+  font-size: 3rem;
   color: white;
   text-align: center;
   text-shadow: 0 0 0.2em rgb(71, 255, 95), 0 0 0.3em rgb(71, 255, 123);
-  margin-bottom: 1.5rem; /* Increased margin for better spacing */
+  margin-bottom: 1.5rem;
 }
 
 .mission-statement p,
 .mission-statement ul {
-  font-size: 1.25rem; /* Responsive font size */
+  font-size: 1.25rem;
   color: #eacdc2;
-  line-height: 1.75; /* Increased line height for better readability */
-  margin-bottom: 1rem; /* Added bottom margin for spacing */
+  line-height: 1.75;
+  margin-bottom: 1rem;
 }
 
 .mission-statement li {
-  margin-bottom: 0.5rem; /* Increased bottom margin for list items */
+  margin-bottom: 0.5rem;
 }
 
-/* Responsive text alignment for smaller screens */
 @media (max-width: 768px) {
   .mission-statement h2,
   .mission-statement p,
@@ -111,7 +110,6 @@ body {
   width: 10px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background-color: rgba(192, 192, 192, 0.5);
   border-radius: 10px;
