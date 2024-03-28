@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+.header {
+  position: relative;
+  padding: 100px 0;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
+    url("https://englishpluspodcast.com/wp-content/uploads/2024/01/The-Future-of-Renewable-Energy.jpg");
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.searcg {
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 0.2em rgb(71, 255, 95), 0 0 0.3em rgb(71, 255, 123);
+}
+
+.header h1 {
+  font-size: 4rem; /* Adjusted for better scaling on mobile */
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: white;
+  text-shadow: 0 0 0.2em rgb(71, 255, 95), 0 0 0.3em rgb(71, 255, 123);
+  text-align: center; /* Centered text for all screen sizes */
+}
+
+.navbar {
+  background-color: rgba(37, 36, 34, 0.1);
+  margin-bottom: 0;
+}
+
+.navbar a {
+  color: #eacdc2 !important;
+}
+
+.mission-statement {
+  background: rgb(3, 2, 2);
+  padding: 3rem; /* Added padding for spacing */
+  margin: 20px auto; /* Centered on the page with auto margins */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left for larger screens */
+}
+
+.mission-statement h2 {
+  font-size: 3rem; /* Responsive font size */
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 0.2em rgb(71, 255, 95), 0 0 0.3em rgb(71, 255, 123);
+  margin-bottom: 1.5rem; /* Increased margin for better spacing */
+}
+
+.mission-statement p,
+.mission-statement ul {
+  font-size: 1.25rem; /* Responsive font size */
+  color: #eacdc2;
+  line-height: 1.75; /* Increased line height for better readability */
+  margin-bottom: 1rem; /* Added bottom margin for spacing */
+}
+
+.mission-statement li {
+  margin-bottom: 0.5rem; /* Increased bottom margin for list items */
+}
+
+/* Responsive text alignment for smaller screens */
+@media (max-width: 768px) {
+  .mission-statement h2,
+  .mission-statement p,
+  .mission-statement ul,
+  .mission-statement li {
+    text-align: center;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mission-statement * {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(192, 192, 192, 0.5);
+  border-radius: 10px;
+}
+
+.info-container {
+  max-height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+li.info-block {
+  min-height: 100vh;
+  max-height: 100vh;
+  border-bottom: 1px solid white;
+  padding: 3rem;
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  scroll-snap-align: start;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.chat-container {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.chat-output {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.user-input {
+  width: calc(100% - 90px);
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+.send-button {
+  width: 80px;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
