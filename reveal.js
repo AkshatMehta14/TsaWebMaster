@@ -13,7 +13,7 @@ function sendMessage() {
 
   addMessageToChat("You", userInput);
 
-  fetch("https://dff5-173-71-125-62.ngrok-free.app/", {
+  fetch("https://dff5-173-71-125-62.ngrok-free.app/complete", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
